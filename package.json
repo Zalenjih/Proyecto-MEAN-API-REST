@@ -1,0 +1,30 @@
+{
+  "name": "Proyecto-MEAN-API-REST",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev":"nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zalenjih/Proyecto-MEAN-API-REST.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zalenjih/Proyecto-MEAN-API-REST/issues"
+  },
+  "homepage": "https://github.com/Zalenjih/Proyecto-MEAN-API-REST#readme",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "ejs": "^2.5.9",
+    "express": "^4.16.3",
+    "mongojs": "^2.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.3"
+  }
+}
