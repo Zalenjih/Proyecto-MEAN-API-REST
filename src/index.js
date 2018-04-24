@@ -18,9 +18,13 @@ app.use(express.json()); // Body-parser
 app.use(express.urlencoded({extended: false}));
 
 // Routers
-app.use(indexRoutes);
+//app.use(indexRoutes);
 app.use('/api',tasksRoutes);
 
+// Static files
+app.use(express.static(path.join(__dirname, 'dist')))
+
+// Start server
 app.listen(app.get('port'), () =>{
     console.log("server on port ", app.get('port'));
 });
