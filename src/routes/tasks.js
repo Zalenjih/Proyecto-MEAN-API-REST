@@ -31,9 +31,9 @@ router.post('/tasks', (req, res, next) => {
 });
 
 router.delete('/tasks/:id', (req, res, next) => {
-    db.tasks.remove({_id: mongojs.ObjectId(req.params.id) }, (err, result) => {
+    db.tasks.remove({_id: mongojs.ObjectId(req.params.id)}, (err, result) => {
         if (err) return next(err);
-        res.json(XPathResult);
+        res.json(result);
     });
 });
 

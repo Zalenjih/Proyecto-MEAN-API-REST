@@ -23,13 +23,13 @@
   <tbody>
     <tr *ngFor="let task of tasks">
       <td>
-        <input type="checkbox">
+        <input type="checkbox" [checked]="task.idDone" (click)="updateTask(task)">
       </td>
       <td>
-        {{ task.title}}
+        {{task.title}}
       </td>
       <td>
-        <button class="btn btn-danger">
+        <button class="btn btn-danger" (click)="deleteTask(task._id)">
           <i class="fa fa-trash"></i>
         </button>
       </td>
